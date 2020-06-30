@@ -11,10 +11,10 @@ console.log(teclas)
 document.addEventListener("keyup", dibujarTeclado);
 var cuadrito = document.getElementById("papel");
 var area_dibujo = cuadrito.getContext("2d");
-var x = 150;
-var y = 150;
+var x = 300;
+var y = 300;
 
-dibujarLinea("red", 149, 149, 151, 151, area_dibujo);
+dibujarLinea("red", 299, 299, 301, 301, area_dibujo);
 
 function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal, lienzo)
 {
