@@ -1,23 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
+        <meta charset="UTF-8">
         <title>OASIS</title>
-        <style>
-            body
-            {
-                background-color: black;
-                color: whitesmoke;
-            }
-        </style>
+        <link rel="stylesheet" href="css/estilos_p2.css">
+        <link rel="icon" href="imagenes/logo.jpg">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;800&family=Fredoka+One&family=Kaushan+Script&family=Pompiere&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1 align="center" style="font-size: 70px; padding: 0%; border: 5px solid white; ">📀⚡ OASIS TEAM 💸🔥</h1>
-        <p align="center" style="font-size: 50px;">&#128155 Mueve las flechas del teclado para Dibujar &#128147</p>
-        <p></p>
-        <p align="center"><canvas height="600" width="600" id="papel" style="border: 5px solid white;"></canvas></p>
-        <p align="center"><img src="https://radionotas.com/wp-content/uploads/2019/06/Ecard-J-Balvin-1070X365.jpg"></p>
-        <p></p>
-        <p align="center" id=texto style="font-size: 50px;"></p>
+        <header class="header">
+            <figure class="logo">
+                <img src="imagenes/oasis.jpg" alt="Logo" height="100px">
+            </figure>
+            <nav class="menu">
+                <ol>
+                    <li>
+                        <a href="#BadBunny" class="link">Bad Bunny</a>
+                    </li>
+                    <li>
+                        <a href="#JBlavin" class="link">J Balvin</a>
+                    </li>
+                    <li>
+                        <a href="#Oasis" class="link">Oasis</a>
+                    </li>
+                </ol>
+            </nav>
+        </header>
+        <section class="hero">
+            <h1>Hola! En este pequeño blog vas <br/> 
+                a conocer un poco mas sobre el <br/> album Oasis de J Balvin y Bad Bunny, <br/>
+                 y por supuesto conoceras mas <br/> de estos artistas. <br/> <br/>
+                Primero un video de una de las mejores <br/>
+                 canciones de  este album, disfrutalo...</h1>
+                 <iframe class="video" width="600" height="350" src="https://www.youtube.com/embed/kPc3Pe42bGI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+        <section  id="BadBunny" class="info-artist">
+            <article class="info-bunny">
+                <div class="info-badBunny">
+                    <div class="info-bunny-balvin-details">
+                        <h2 class="info-name">Bad Bunny</h2>
+                        <h5 class="info-place"><strong>Nacio en:</strong> Vega Baja, San Juan, Puerto Rico.</h5>
+                        <h5 class="info-date"><strong>Fecha de Nacimiento:</strong> 10 de marzo de 1994.</h5>
+                        <p class="info-details">Benito Antonio Martínez Ocasio más conocido <br/> por su nombre artístico Bad Bunny,<br/> es un cantante, rapero y trapero puertorriqueño <br/> de género reguetón y trap latino. <br/> Bad Bunny cuenta con cuatro discos, de los cuales <br/> uno es en colaboración con J Balvin (Oasis) y es <br/> del que vamos a hablar en este blog.</p>
+                        <div class="social">
+                            <a target="_blank" href="https://open.spotify.com/artist/4q3ewBCX7sLwd24euuV69X" class="social-link Spotify"></a>
+                            <a target="_blank" href="https://www.youtube.com/channel/UCmBA_wu8xGg1OfOkfW13Q0Q" class="social-link YouTube"></a>
+                            <a target="_blank" href="https://instagram.com/badbunnypr?igshid=139e3a14shtim" class="social-link Instagram"></a>
+                        </div>
+                    </div>
+                    <figure class="info-imageContainer">
+                        <img class="info-image" src="imagenes/bad Bunny.jpg" alt="Foto Bad Bunny" height="380">
+                    </figure>
+                </div>
+            </article>
+        </section>
+        <section  id="JBlavin" class="info-artist">
+            <article class="info-balvin">
+                <div class="info-JBalvin">
+                    <div class="info-bunny-balvin-details">
+                        <h2 class="info-name">J Balvin</h2>
+                        <h5 class="info-place"><strong>Nacio en:</strong> Medellín, Colombia.</h5>
+                        <h5 class="info-date"><strong>Fecha de Nacimiento:</strong> 7 de mayo de 1985.</h5>
+                        <p class="info-details">José Álvaro Osorio Balvín, conocido como </br> J Balvin, es un cantante, productor discográfico y actor </br> colombiano, que ha logrado posicionarse tanto en </br> el mercado musical hispano como en el mercado musical </br> de habla inglesa, llegando a colocar sus temas </br> en número uno, en varias listas musicales, <br> entre ellas Billboard.​ También es conocido <br> como el "Príncipe del Reggaeton".</p>
+                        <div class="social">
+                            <a target="_blank" href="https://open.spotify.com/artist/1vyhD5VmyZ7KMfW5gqLgo5" class="social-link Spotify"></a>
+                            <a target="_blank" href="https://www.youtube.com/channel/UCt-k6JwNWHMXDBGm9IYHdsg" class="social-link YouTube"></a>
+                            <a target="_blank" href="https://www.instagram.com/jbalvin/?hl=es-la" class="social-link Instagram"></a>
+                        </div>
+                    </div>
+                    <figure class="info-imageContainer">
+                        <img class="info-image" src="imagenes/j-balvin.jpg" alt="Foto J Balvin" height="380">
+                    </figure>
+                </div>
+            </article>
+        </section>
         <script src="oasis.js"></script>
     </body>
 </html>

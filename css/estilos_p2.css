@@ -1,0 +1,197 @@
+body
+{
+
+}
+
+h2
+{
+    font-family: 'Fredoka One', cursive;
+}
+
+.header
+{
+    border-radius: 40px;
+    height: 100px;
+    background-image: url("../imagenes/background.jpg");
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.logo
+{
+    margin: 0;
+}
+
+.hero
+{
+    color: white;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin: 20px 0;
+    border-radius: 50px;
+    background-image: url("../imagenes/background.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.hero h1
+{
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+    font-weight: 200;
+}
+
+.video
+{
+    border-radius: 20px;
+}
+
+.menu
+{
+    height: inherit;
+}
+
+.header ol
+{
+    height: inherit;
+    margin: 0 10px;
+    display: flex;
+    padding: 0;
+}
+
+.link
+{
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+    align-items: center;
+    color: white;
+    height: 100px;
+    display: flex;
+    margin: 0 30px;
+    text-decoration: none;
+}
+
+.info-artists
+{
+    padding: 10px;
+    font-family: 'Pompiere', cursive;
+    margin: 20px 0;
+}
+
+.info-bunny
+{
+    border-radius: 50px;
+    padding: 40px;
+    /* background-color: #e67300; */
+    background-image: url("../imagenes/wallpaper1.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.info-badBunny
+{
+    height: 550px;
+    display: flex;
+    font-family: 'Pompiere', cursive;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.info-name
+{
+    font-size: 40px;
+    margin: 5px 0 30px;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
+.info-place,.info-date
+{
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+
+.info-details
+{
+    font-size: 30px;
+    text-align: center;
+}
+
+.social
+{
+    display: flex;
+    justify-content: center;
+}
+
+.social-link
+{
+    margin: 0 40px;
+    display: inline-block;
+    height: 75px;
+    width: 75px;
+    background-size: 75px 75px;
+}
+
+.social-link.Spotify
+{
+    background-image: url("../imagenes/spotify.png");
+}
+
+.social-link.YouTube
+{
+    background-image: url("../imagenes/Youtube.png");
+}
+
+.social-link.Instagram
+{
+    background-image: url("../imagenes/Instagram.png");
+}
+
+.info-image
+{
+    border-radius: 70px;
+    border-style: outset;
+}
+
+.info-balvin
+{
+    border-radius: 50px;
+    padding: 40px;
+    /* background-color: #e67300; */
+    background-image: url("../imagenes/wallpaper1.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.info-JBalvin
+{
+    height: 550px;
+    display: flex;
+    font-family: 'Pompiere', cursive;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#BadBunny
+{
+    margin: 30px 0;
+}
+
+#JBalvin
+{
+    margin: 30px 0;
+}
