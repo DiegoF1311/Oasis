@@ -1,6 +1,10 @@
 body
 {
-
+    margin: 0;
+    background-image: url("../imagenes/background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
 }
 
 h2
@@ -10,17 +14,18 @@ h2
 
 .header
 {
-    border-radius: 40px;
     height: 100px;
-    background-image: url("../imagenes/background.jpg");
+    background-image: url("../imagenes/estrellas.png");
     display: flex;
     justify-content: space-between;
     overflow: hidden;
+    background-repeat: repeat;
 }
 
 .logo
 {
     margin: 0;
+    margin-right: 120px;
 }
 
 .hero
@@ -29,13 +34,15 @@ h2
     height: 400px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 30px;
-    margin: 20px 0;
-    border-radius: 50px;
+    margin: 0 0 30px;/* 
     background-image: url("../imagenes/background.jpg");
     background-size: 100%;
-    background-attachment: fixed;
+    background-attachment: fixed; */
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    border-radius: 50px;
 }
 
 .hero h1
@@ -222,10 +229,11 @@ h2
     border: .5px solid black;
     border-radius: 30px;
     box-shadow: 3px 3px 3px 2px grey;
-    height: 550px;
-    width: 650px;
+    height: 450px;
+    width: 550px;
     flex-wrap: wrap;
     display: flex;
+    align-items: center;
     justify-content: center;
     background-image: url("../imagenes/white-background.jpg");
     background-attachment: fixed;
@@ -244,17 +252,18 @@ h2
 
 .oasis
 {
-    color: white;
-    margin: 30px 0;
-    border: 1px solid black;
+    color: #ffffff;
+    border: 2px solid white;
+    margin: 30px 0 10px;
     height: 750px;
     text-align: center;
     justify-content: center;
     background-image: url("../imagenes/background3.png");
     background-size: 100%;
+    background-attachment: fixed;
     padding: 40px;
     padding-top: 20px;
-    border-radius: 40px;
+    border-radius: 50px;
 }
 
 .oasis h2
@@ -336,4 +345,100 @@ h2
 .oasis-details figure img
 {
     border-radius: 50px;
+}
+
+.footer
+{
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+}
+
+.footer h2
+{
+    font-family: 'Kaushan Script', cursive;
+}
+
+.footer p
+{
+    font-size: 30px;
+}
+
+.logo-footer
+{
+    border: 1px solid transparent;
+    box-shadow: 3px 3px 20px 2px grey;
+    border-radius: 60px;
+    width: 120px;
+    height: 120px;
+    background-image: url("../imagenes/logo-badbunny.png");
+    background-position: center;
+    background-size: 117%;
+}
+
+
+.contacto
+{
+    display: flex;
+    justify-content: center;
+}
+
+.contacto-link
+{
+    width: 80px;
+    height: 80px;
+    margin: 0 30px;
+    background-size: 80px 80px;
+}
+
+.contacto-link.Whatsapp
+{
+    background-image: url("../imagenes/whatsapp-logo].png");
+}
+
+.contacto-link.Github
+{
+    background-image: url("../imagenes/github.svg");
+}
+
+.container
+{
+    width: 1250px;
+    margin: 0 auto;
+}
+
+.container-hero
+{
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.container-videos
+{
+    width: 1150px;
+    height: 470px;
+    margin: 30px auto;
+}
+
+.BADBUNNY 
+{
+    margin: 30px 0;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    border-radius: 40px;
+}
+
+.JBALVIN
+{
+    padding-top: 30px;
+    margin: 30px 0;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    border-radius: 40px;
 }
