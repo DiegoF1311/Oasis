@@ -73,6 +73,11 @@ h2
     padding: 0;
 }
 
+.header ol li
+{
+    display: inherit;
+}
+
 .link
 {
     font-family: 'Fredoka One', cursive;
@@ -409,13 +414,16 @@ h2
 
 .container
 {
+    color: white;
     width: 1250px;
     margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
 }
 
 .container-hero
 {
-    width: 1500px;
+    width: 1350px;
     margin: 0 auto;
 }
 
