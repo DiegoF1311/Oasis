@@ -47,9 +47,10 @@ h2
     font-weight: 200;
 }
 
-.video
+.video-hero
 {
     border-radius: 20px;
+    border: 2px solid white;
 }
 
 .menu
@@ -184,6 +185,7 @@ h2
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 #BadBunny
@@ -194,4 +196,144 @@ h2
 #JBalvin
 {
     margin: 30px 0;
+}
+
+.videos
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.video-details
+{
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 25px;
+    width: 500px;
+    height: 130px;
+    align-items: center;
+    border-bottom: 1px solid black;
+    border-radius: 50px;
+}
+
+.video1-bunny-balvin, .video2-bunny-balvin
+{
+    border: .5px solid black;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px 2px grey;
+    height: 550px;
+    width: 650px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    background-image: url("../imagenes/white-background.jpg");
+    background-attachment: fixed;
+}
+
+.video-container
+{
+    margin: 0;
+}
+
+.video
+{
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+.oasis
+{
+    color: white;
+    margin: 30px 0;
+    border: 1px solid black;
+    height: 750px;
+    text-align: center;
+    justify-content: center;
+    background-image: url("../imagenes/background3.png");
+    background-size: 100%;
+    padding: 40px;
+    padding-top: 20px;
+    border-radius: 40px;
+}
+
+.oasis h2
+{
+    font-size: 80px;
+    margin: 20px;
+    margin-left: 130px;
+    margin-bottom: 40px;
+    border-radius: 50px;
+    border-bottom: 1px solid white;
+    width: 400px;
+    height: 100px;
+}
+
+.oasis-name-links
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.hearoasis
+{
+    display: flex;
+    justify-content: center;
+    margin: 20px 40px;
+    margin-bottom: 0;
+}
+
+.hearoasis-links
+{
+    display: inline-block;
+    border: .5px solid transparent;
+    box-shadow: 3px 3px 20px 2px grey;
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+    margin: 0 20px;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+}
+
+.hearoasis-links.spotify
+{
+    background-image: url("../imagenes/spotify.png");
+}
+
+.hearoasis-links.deezer
+{
+    background-image: url("../imagenes/deezer.png");
+}
+
+.hearoasis-links.applemusic
+{
+    background-image: url("../imagenes/apple_music.png");
+    background-size: 138px 138px;
+    background-position: center;
+}
+
+
+.oasis-details
+{
+    font-family: 'Pompiere', cursive;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.oasis-details p
+{
+    width: inherit;
+    margin: 0;
+    display: inline;
+    text-align: center;
+    font-weight: 700;
+}
+
+.oasis-details figure img
+{
+    border-radius: 50px;
 }
