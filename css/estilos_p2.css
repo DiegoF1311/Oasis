@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+}
+
 body
 {
     margin: 0;
@@ -14,11 +18,8 @@ h2
 
 .header
 {
-    height: 100px;
+    width: 100%;
     background-image: url("../imagenes/estrellas.png");
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
     background-repeat: repeat;
 }
 
@@ -32,17 +33,13 @@ h2
 {
     color: white;
     height: 400px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 0 30px;
-    margin: 0 0 30px;/* 
-    background-image: url("../imagenes/background.jpg");
-    background-size: 100%;
-    background-attachment: fixed; */
     background-color: transparent;
     border-bottom: 2px solid white;
-    border-radius: 50px;
 }
 
 .hero h1
@@ -97,23 +94,26 @@ h2
     margin: 20px 0;
 }
 
-.info-bunny
+.info-bunny, .info-balvin
 {
+    width: 90%;
     border-radius: 50px;
-    padding: 40px;
-    /* background-color: #e67300; */
+    padding: 20px;
     background-image: url("../imagenes/wallpaper1.jpg");
+    background: -webkit-linear-gradient(#03071e, #370617, #6a040f) ;
     background-size: 100%;
     background-attachment: fixed;
 }
 
-.info-badBunny
+.info-badBunny, .info-JBalvin
 {
+
+    height: 100%;
     height: 550px;
     display: flex;
     font-family: 'Pompiere', cursive;
     color: white;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -140,6 +140,7 @@ h2
 {
     font-size: 30px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .social
@@ -178,43 +179,25 @@ h2
     border-style: outset;
 }
 
-.info-balvin
-{
-    border-radius: 50px;
-    padding: 40px;
-    /* background-color: #e67300; */
-    background-image: url("../imagenes/wallpaper1.jpg");
-    background-size: 100%;
-    background-attachment: fixed;
-}
 
-.info-JBalvin
+#BadBunny, #JBalvin
 {
-    height: 550px;
+    margin: 30px 0;
     display: flex;
-    font-family: 'Pompiere', cursive;
-    color: white;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
+    justify-content: center;
+    width: 100%;
 }
 
-#BadBunny
-{
-    margin: 30px 0;
-}
-
-#JBalvin
-{
-    margin: 30px 0;
-}
 
 .videos
 {
     display: flex;
     justify-content: space-between;
-    margin: 30px 0;
+    margin-top: 4em;
+    margin-bottom: 1em;
+    width: 100%;
+    height: 30em;
+    position: relative;
 }
 
 .video-details
@@ -222,31 +205,77 @@ h2
     text-align: center;
     font-family: 'Kaushan Script', cursive;
     font-size: 25px;
-    width: 500px;
-    height: 130px;
-    align-items: center;
-    border-bottom: 1px solid black;
+    width: 90%;
+    height: 86px;
+    border-bottom: 2px solid black;
     border-radius: 50px;
 }
 
-.video1-bunny-balvin, .video2-bunny-balvin
+.video-bunny-balvin
 {
     border: .5px solid black;
+    padding-top: 20px;
     border-radius: 30px;
     box-shadow: 3px 3px 3px 2px grey;
-    height: 450px;
-    width: 550px;
+    height: 27.5em;
+    width: 33em;
+    margin-right: 20px;
     flex-wrap: wrap;
     display: flex;
-    align-items: center;
     justify-content: center;
     background-image: url("../imagenes/white-background.jpg");
     background-attachment: fixed;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
 }
 
-.video-container
+.video-bunny-balvin:hover ~ .video-bunny-balvin
 {
-    margin: 0;
+    transform: translate3d(6em, 0, 0);
+    transition-delay: 430ms;
+}
+
+.videos:hover .video-bunny-balvin
+{
+    opacity: 0.3;
+    transition-delay: 430ms;
+}
+
+.videos:hover .video-bunny-balvin:hover
+{
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+::-webkit-scrollbar-corner
+{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: white;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar
+{
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar:hover
+{
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar:hover:active
+{
+    background: #999;
 }
 
 .video
@@ -258,9 +287,11 @@ h2
 .oasis
 {
     color: #ffffff;
+    box-shadow: 3px 3px 40px 2px grey;
     border: 2px solid white;
     margin: 30px 0 10px;
     height: 750px;
+    width: 90%;
     text-align: center;
     justify-content: center;
     background-image: url("../imagenes/background3.png");
@@ -414,39 +445,53 @@ h2
 
 .container
 {
-    color: white;
-    width: 1250px;
-    margin: 0 auto;
-    display: inherit;
-    justify-content: inherit;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .container-hero
 {
-    width: 1350px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     margin: 0 auto;
+    border-bottom: 1px solid;
+    background: -webkit-linear-gradient(black, rgba(255,255,255,.4), black);
 }
 
 .container-videos
 {
-    width: 1150px;
-    height: 470px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
     margin: 30px auto;
+    margin-top: 0;
+    width: 100%;
+    white-space: nowrap;
+    overflow: scroll;
 }
 
-.BADBUNNY 
+.BADBUNNY, .JBALVIN
 {
-    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    height: 90%;
+    width: 100%;
+    padding-top: 10px;
+    margin: 30px  0;
     border-top: 3px solid white;
     border-bottom: 3px solid white;
-    border-radius: 40px;
+    background: -webkit-linear-gradient(black, rgba(255,255,255,.4), black);
 }
 
-.JBALVIN
+/* @media only screen and ( min-width: 1000px, max-width: 1000px)
 {
-    padding-top: 30px;
-    margin: 30px 0;
-    border-top: 3px solid white;
-    border-bottom: 3px solid white;
-    border-radius: 40px;
-}
+    .hero h1 
+    {
+        font-size: 1.8em;
+    }
+} */
