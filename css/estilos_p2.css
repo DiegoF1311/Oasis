@@ -304,7 +304,7 @@ h2
     background-image: url("../imagenes/background3.png");
     background-size: 100%;
     background-attachment: fixed;
-    padding: 40px;
+    padding: 30px;
     padding-top: 20px;
     border-radius: 50px;
 }
@@ -589,6 +589,15 @@ h2
         display: flex;
         justify-content: center;
     }
+    .info-bunny, .info-balvin
+    {
+        width: 95%;
+        padding: 10px;
+    }
+    .info-balvin
+    {
+        padding: 0;
+    }
     .info-badBunny, .info-balvin
     {
         display: block;
@@ -653,16 +662,18 @@ h2
     }
     .video
     {
-        width: 95%;
+        width: 93%;
         height: 95%;
     }
     .oasis
     {
-        padding: 0;
+        width: 95%;
+        padding: 0 2px;
         background: -webkit-linear-gradient(#03071e, #370617, #6a040f) ;
     }
     .oasis-details, .oasis-name-links
     {
+        font-size: 15px;
         display: inline-block;
         width: 100%;
         height: 50%;
@@ -670,7 +681,6 @@ h2
     }
     .oasis-details p
     {
-        font-size: 25px;
         height: 100%;
         margin: 20px 0;
     }
