@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+a
+{
+    cursor: pointer;
+}
+
 body
 {
     margin: 0;
@@ -31,11 +36,6 @@ h2
     height: 100%;
 }
 
-/* .logo img
-{
-    height: 0.1%;
-} */
-
 .hero
 {
     color: white;
@@ -44,7 +44,7 @@ h2
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 0 30px;
+    padding: 30px;
     background-color: transparent;
     border-bottom: 2px solid white;
 }
@@ -96,7 +96,7 @@ h2
 
 .info-artists
 {
-    padding: 10px;
+    padding: 30px;
     font-family: 'Pompiere', cursive;
     margin: 20px 0;
 }
@@ -106,7 +106,7 @@ h2
     width: 90%;
     height: 100%;
     border-radius: 50px;
-    padding: 10px;
+    padding: 25px;
     background-image: url("../imagenes/wallpaper1.jpg");
     background: -webkit-linear-gradient(#03071e, #370617, #6a040f) ;
     background-size: 100%;
@@ -301,7 +301,6 @@ h2
     height: 100%;
     width: 90%;
     text-align: center;
-    justify-content: center;
     background-image: url("../imagenes/background3.png");
     background-size: 100%;
     background-attachment: fixed;
@@ -503,15 +502,87 @@ h2
     max-width: 100%;
 }
 
-@media screen and (max-width: 800px)
+@media screen and (max-width: 1050px)
 {
+    .link 
+    {
+        margin: 0 20px;
+    }
     .hero
     {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0 ;
     }
     .video-hero
     {
         margin: 30px
+    }
+    .info-imageContainer
+    {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+    .info-badBunny, .info-balvin
+    {
+        display: block;
+        flex-wrap: nowrap;
+    }
+    .oasis
+    {
+        padding: 15px;
+    }
+    .oasis-image
+    {
+        margin-top: 30px;
+    }
+    .oasis-details, .oasis-name-links
+    {
+        display: inline-block;
+        margin: 20px;
+    }
+    .oasis-name-links h2 
+    {
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 450px)
+{
+    .logo img
+    {
+        margin: 0;
+        height: 90px;   
+    }
+    .container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu a
+    {
+        height: 40px;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    .hero
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        padding-top: 30px;
+    }
+    .hero h1
+    {
+        font-size: 20px;
+    }
+    .video-hero
+    {
+        margin: 30px;
+        width: 320px;
+        height: 220px;
     }
     .info-imageContainer
     {
@@ -523,12 +594,132 @@ h2
         display: block;
         flex-wrap: nowrap;
     }
+    .info-bunny-balvin-details
+    {
+        width: 100%;
+    }
+    .info-bunny-balvin-details h5
+    {
+        font-size: 20px;
+    }
+    .info-details
+    {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .social
+    {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .social-link
+    {
+        margin: 0;
+        height: 35px;
+        width: 35px;
+        background-size: 35px 35px;
+    }
+    .info-image
+    {
+        width: 95%;
+        height: 100%;
+        border-radius: 20px;
+    }
+    .video-bunny-balvin:hover ~ .video-bunny-balvin
+    {
+        transform: translate3d(1em, 0, 0);
+    }
+    .videos:hover .video-bunny-balvin:hover
+    {
+        transform: scale(1.05);
+    }
+    .videos
+    {
+        margin-top: 10px;
+        height: 100%;
+    }
+     .video-bunny-balvin
+    {
+        height: 60%;
+        width: 100%;
+    }
+    .video-details
+    {
+        margin: 0 20px;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 35%;
+        font-size: 20px;
+    }
+    .video
+    {
+        width: 95%;
+        height: 95%;
+    }
+    .oasis
+    {
+        padding: 0;
+        background: -webkit-linear-gradient(#03071e, #370617, #6a040f) ;
+    }
     .oasis-details, .oasis-name-links
     {
         display: inline-block;
+        width: 100%;
+        height: 50%;
+        margin: 20px 0;
+    }
+    .oasis-details p
+    {
+        font-size: 25px;
+        height: 100%;
+        margin: 20px 0;
+    }
+    .oasis-image img 
+    {
+        margin: 30px 0 0 0;
+        width: 90%;
+        height: 100%;
     }
     .oasis-name-links h2 
     {
+        width: 60%;
+        height: 10%;
         margin: 0 auto;
+        margin-top: 20px;
+        font-size: 50px;
+    }
+    .hearoasis
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+    .hearoasis-links
+    {
+        margin: 0;
+        height: 50px;
+        width: 50px;
+        background-size: 50px 50px;
+    }
+    .hearoasis-links.applemusic
+    {
+        background-position: center;
+        background-size: 88px 88px;
+    }
+    .footer
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-top: 3px solid white;
+        font-size: 15px;
+    }
+    .footer p
+    {
+        font-size: 20px;
+    }
+    .logo-footer
+    {
+        margin: 30px 0;
     }
 }
+
